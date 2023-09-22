@@ -1,0 +1,13 @@
+package phase1_programs;
+
+public class ExpiclitTypeCastingDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a = 11.32;
+		int b=(int)a;
+		System.out.println(b);
+
+	}
+
+}
