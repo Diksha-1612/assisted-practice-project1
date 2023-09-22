@@ -1,0 +1,26 @@
+package collectionsdemo;
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// create an object of the ArrayList class which is implementing methods of list class
+		
+		//checking add() method
+		ArrayList<String> cities = new ArrayList<>();
+		cities.add("London");
+		cities.add("Paries");
+		cities.add("india");
+		cities.add(2,"new delhi");//add value at a particular index
+		//checking size method
+		System.out.println(cities.size());
+		
+		//print items of the list
+		//for each loop
+		
+		for(String t :cities) {
+			System.out.println(t);
+		}
+	}
+
+}
