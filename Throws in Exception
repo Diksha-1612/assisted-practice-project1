@@ -1,0 +1,29 @@
+package exceptionPractices;
+import java.util.InputMismatchException;
+public class ThrowsDemo{
+	public void div(int a ,int b) {
+		
+		if(b==0) {
+			throw new ArithmeticException();
+		}
+		else {
+			int result = a/b;
+			System.out.println("The division of the value is " +result);
+		
+		}
+		
+		}
+
+  public static void main(String[] args) throws ArithmeticException {
+		// TODO Auto-generated method stub
+		ThrowsDemo d2 = new ThrowsDemo();
+		try {
+			d2.div(12,0);
+		}
+		catch(Exception e){
+			System.out.println("Further code execution");
+		}
+
+	}
+
+}
