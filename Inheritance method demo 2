@@ -1,0 +1,47 @@
+package inheritance;
+
+public class MethodsDemo2 {
+	//global variables:variables that are declared at class level
+	int x = 100;
+	String str3 = "java";
+	//local variables :variables within a method
+	//the scope of the variable is within a method
+	
+	public int sum() {
+		int a =10;
+		int b =20;
+		int result = a+b +x;
+		return result; //returning the integer value
+	}
+	
+	public String concatMethod() {
+		String str1 = "Selinium ";
+		String str2 ="Training";
+		String result = str1 +str2 +str3;
+		return result;
+		
+	}
+	public void printmethod() {
+		System.out.println("The global integer value is " +x);
+		System.out.println("The global string value is" +str3);
+	}
+
+	public static void main(String[] args) {
+		
+		MethodsDemo2 obj2 = new MethodsDemo2();
+		
+		int value = obj2.sum();
+		System.out.println(value);
+		System.out.println(obj2.concatMethod());
+		obj2.printmethod();
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
