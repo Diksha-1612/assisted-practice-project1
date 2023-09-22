@@ -1,0 +1,31 @@
+package inheritance;
+
+public class ParametersDemo1 {
+		//methods which do not return a value
+		//pass values to your methods
+		//whenever the method will be called it will expect the user to enter the values of parameter
+		public void login(String username ,String Password ) {
+			System.out.println("Enter the username \n" +username);
+			System.out.println("Enter the Password \n" +Password);
+			System.out.println("click on login button");
+			
+		}
+		public void ComposeEmail(String text) {
+			System.out.println("Compose an email with a text\n" +text );
+			
+		}
+		public void logout(){
+			System.out.println("Click on logout button");
+			
+		}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ParametersDemo1 obj2 = new ParametersDemo1();
+		obj2.login("Diksha", "admin@123");
+		obj2.ComposeEmail("hello all");
+		obj2.logout();
+
+	}
+
+}
