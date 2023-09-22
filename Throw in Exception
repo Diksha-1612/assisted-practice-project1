@@ -1,0 +1,24 @@
+package exceptionPractices;
+
+public class ThrowDemo {
+	
+	public void div(int a ,int b) {
+	
+	if(b==0) {
+		throw new ArithmeticException();
+	}
+	else {
+		int result = a/b;
+		System.out.println("The division of the value is " +result);
+	
+	}
+	
+	}
+
+	public static void main(String[] args) {
+		ThrowDemo d1 = new ThrowDemo();
+		d1.div(12,0);
+
+	}
+
+}
