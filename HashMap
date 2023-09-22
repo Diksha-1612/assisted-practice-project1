@@ -1,0 +1,34 @@
+package collectionsdemo;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+public class HashMapDemo {
+	//Hash map is implementing map interface ....> package util.java
+	//you can have duplicate value
+	//it must have a unique key
+	//hash map must have one null value but there can be many values with same name
+	//can store any datatype 
+	//
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> hm = new HashMap<>();
+		
+		//hashmap data and key will be inserted as put 
+		//every key and value is inserted in the map is a type of Entery set
+		hm.put(123,"Diksha");
+		hm.put(1234,"Ravi");
+		hm.put(12345,"Sonali");
+		hm.put(12345,"Tanu");
+		for(Entry m :hm.entrySet()) {
+			System.out.println(m.getKey() + " -" + m.getValue());
+		}
+		System.out.println(hm.containsValue("Diksha"));
+		System.out.println(hm.remove("Diksha"));
+		
+
+		
+
+	}
+
+}
