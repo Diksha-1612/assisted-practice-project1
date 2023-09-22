@@ -1,0 +1,38 @@
+package phase1_programs;
+
+public class Inbuiltdemo2 {
+	public static void main (String args[]) {
+	String title = "Simplilearn Online courses";
+	if(title.contains("Simplilearn")) {
+		System.out.println("The condition is valid. Test case passes");
+	}
+	else {
+		System.out.println("the condition is not valid .Test case failed");
+	}
+	//method 2 using equals
+	if(title.equals("Simplilearn Online courses")) {
+		System.out.println("The condition is valid. Test case passes");
+		
+	}
+	else {
+		System.out.println("the condition is not valid .Test case failed");
+		
+	}
+	//method 3 using substring
+	
+	String title2 ="Practice labs java";
+	String result = title2.substring(14);
+	if(result.equals("java"))
+	{
+		System.out.println("String is valid");
+		
+	}
+	else {
+		System.out.println("String is invalid");
+		
+	}
+	
+	
+
+}
+}
