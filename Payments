@@ -1,0 +1,24 @@
+package inheritance;
+
+public class Payments extends HomePage {
+	//this class is the child to HomePage and grand child to base
+	public void payments(){
+		System.out.println("Test payments page");
+	}
+	
+
+	public static void main(String[] args) {
+		Payments obj1 = new Payments();
+		obj1.openbrowser("Chrome");
+		obj1.login();
+		obj1.logout();
+		obj1.payments();
+		obj1.HomePagetest();
+		
+		
+		
+		
+
+	}
+
+}
