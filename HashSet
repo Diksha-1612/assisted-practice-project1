@@ -1,0 +1,27 @@
+package collectionsdemo;
+
+import java.util.HashSet;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//it stores data as key value pair
+		//hash set do not allow index based insertion and deletion
+		HashSet<String> cities = new HashSet<>();
+		cities.add("London");
+		cities.add("New york");
+		cities.add("Delhi");
+		cities.add("mumbai");
+		//elements will be printed in random set
+		
+		for(String t :cities) {
+			System.out.println(t);
+		}
+		System.out.println(cities.size());
+		System.out.println(cities.contains("Tokiyo"));
+		
+
+	}
+
+}
