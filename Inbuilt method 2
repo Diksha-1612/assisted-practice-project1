@@ -1,0 +1,15 @@
+package phase1_programs;
+
+public class Inbuiltmethods {
+
+	public static void main(String[] args) {
+		String s1 = "Selenium";
+		String s2 = "training";
+		String s3 = s1 +s2;
+		String s4 = s1.concat(s2);
+		System.out.println("Concatination of string with + operator\n" + s3);
+		System.out.println("Concatination of string using concat\n"+ s4);
+
+	}
+
+}
